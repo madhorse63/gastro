@@ -12,7 +12,7 @@ const smoothScroll = (elem) => {
     let headerHeight = document.querySelector('header').offsetHeight;
     let elemTop = element.offsetTop;
     let scrolling = elemTop - headerHeight;
-    window.scroll({
+    window.scroll({ // не работает в сафари
         left: 0,
         top: scrolling,
         behavior: 'smooth'

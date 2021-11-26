@@ -7,17 +7,21 @@ import {btnChoice, days, changeProgramDescr, dayColor, progrmasChoice} from './m
 import {faqHoverImg, faqActive, faqChange} from './modules/faq';
 import {cardsSwitcher} from './modules/blogSwitcher';
 import {btnToStorage, addToStorage, addChange} from './modules/add';
-import {inputFocus, userName, userNameLabel, userPhone, userPhoneLabel} from './modules/checkUserInput'
+import {inputFocus, callOrderModal, userName, userNameLabel, userPhone, userPhoneLabel} from './modules/checkUserInput'
+export {blogNews} from './modules/blogNewsInfo';
+import {changeCards, cards} from './modules/blogNewsScript';
 
 burger.addEventListener('click', showBurgerMenu);
 closeBurger.addEventListener('click', closeBurgerMenu);
 document.addEventListener('click', closeBurgerDoc);
+
 openModal('.article-modal', '.more-card-info', '.close-article');
 openModal('.candy-items', '.more-candy', '.close-candy');
 openModal('.form-modal', '.online-checkout-wrap', '.form-close');
 openModal('.form-modal', '.phone-checkout-wrap', '.form-close');
 openModal('.order-modal', '.arrangeLunch', '.order-close');
 openModal('.order-modal', '.arrangeCandy', '.order-close');
+
 changeProgramDescr();
 dayColor();
 progrmasChoice();
@@ -71,3 +75,9 @@ document.querySelector('.cooperation').addEventListener('click', (e) => {
 
 inputFocus(userName, userNameLabel);
 inputFocus(userPhone, userPhoneLabel);
+
+callOrderModal();
+
+cards.forEach(item => {
+    changeCards(item);
+});

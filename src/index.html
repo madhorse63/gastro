@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gastro Chef</title>
-    <!-- <link rel="stylesheet" href="style.css"> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&family=Montserrat:wght@300;400;500;700&family=Raleway:wght@400;900&display=swap" rel="stylesheet">
+<!--     <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css"> -->
 </head>
     <body>
         <div class="wrapper" id="top">
@@ -500,11 +501,11 @@
                             <label for="conditions">Согласен с <a href="#">условиями сотрудничества</a></label>                     
                         </div>
                     </form>
-                    <div class="phone-checkout-wrap">
+                    <div class="phone-checkout-wrap callOrderModal">
                         <a href="#" class="phone-checkout">Заказ по телефону</a>
                     </div>            
                     <p class="checkout-choice">ИЛИ</p>
-                    <div class="online-checkout-wrap">
+                    <div class="online-checkout-wrap callOrderModal">
                         <a href="#" class="online-checkout">Онлайн заказ</a>
                     </div>
                 </div>
@@ -767,27 +768,26 @@
             </ul>
         </div>
                 <div class="cards">
-                    <div class="card">
-                        <img src="./images/food//blog/news1/img1.jpg" class="card-article" alt="article picture">
-                        <h3>Как поменять свои пищевые привычки?</h3>
+                    <div class="card" data-id="news1">
+                        <img class="card-article" alt="article picture">
+                        <h3></h3>
                         <div class="card-foot">
                             <p class="publication-date">
-                                29.05.2020
+                                
                             </p>
-                            <a href="#" class="more-card-info open-modal">
+                            <a href="#" class="more-card-info open-modal" data-more="news1">
                                 <p>Подробнее</p>
                                 <img src="./images/icons/greenArrowMore.svg" alt="more">
                             </a>
                         </div>
                     </div>
-                    <div class="card">
-                        <img src="./images/food//blog/news1/img1.jpg" class="card-article" alt="article picture">
-                        <h3>Как поменять свои пищевые привычки?</h3>
+                    <div class="card" data-id="news2">
+                        <img class="card-article" alt="article picture">
+                        <h3></h3>
                         <div class="card-foot">
                             <p class="publication-date">
-                                29.05.2020
                             </p>
-                            <a href="#" class="more-card-info open-modal">
+                            <a href="#" class="more-card-info open-modal" data-more="news1">
                                 <p>Подробнее</p>
                                 <img src="./images/icons/greenArrowMore.svg" alt="more">
                             </a>
@@ -890,7 +890,7 @@
             <div class="article">
                 <span class="close-article">X</span>
                 <div class="food-photo_container center">
-                    <img src="./images/food//blog/news1/img1.jpg" alt="food">
+                    <img src="./images/food//blog/news1/img1.jpg" alt="food" class="img1">
                 </div> 
                 <div class="article-intro center">
                     <div class="intro-info">
@@ -907,15 +907,15 @@
                     <p class="publication-date">29.05.2020</p>
                 </div>
                 <div class="article-text center">
-                    <p>Привычка — это неосознанное, то, что мы делаем на автомате.
+                    <p class="block1">Привычка — это неосознанное, то, что мы делаем на автомате.
                         Например, это такие обыденные вещи, как чистка зубов утром или пристегнуться, садясь в автомобиль. 
                         Большинству из этих привычек мы не отдаем отчета. Именно этот бессознательный фактор и является той сложностью, которая не позволяет вам легко и просто изменить эту самую привычку в итоге.
                     </p>
                     <div class="atricle-food-1">
-                        <img src="./images/food/blog/news1/img2.jpg" alt="food">
+                        <img src="./images/food/blog/news1/img2.jpg" alt="food" class="img2">
                     </div>
             
-                    <p>Их нужно перевести на автомат. И если вы считаете, что для этого нужна невероятная сила воли или сверхстрогий самоконтроль, то вовсе нет. У меня для вас есть несколько простых постепенных шагов, которые помогут вам сделать ваши пищевые привычки осознанными и подконтрольными.
+                    <p class="block2">>Их нужно перевести на автомат. И если вы считаете, что для этого нужна невероятная сила воли или сверхстрогий самоконтроль, то вовсе нет. У меня для вас есть несколько простых постепенных шагов, которые помогут вам сделать ваши пищевые привычки осознанными и подконтрольными.
             
                     Первое, с чего стоит начать  — это прекратите покупать вредные продукты. Запомните: то, чего нет, того и не съешь. В свою очередь, ставим на стол на самое видное место тарелочку с ломтиками моркови, сухофруктами и орешками.
             
@@ -924,10 +924,10 @@
                     Третье и очень важное правило — полезные продукты в вашей квартире и на работе должны стать доступнее и заметнее. Например, яблоко или морковь вместо печенья и конфет на столе, сделайте заготовку из нарезанных листьев салатов в холодильнике, заранее очистите овощей и нарежьте ломтиками.</p>
             
                     <div class="atricle-food-2">
-                        <img src="./images/food/blog/news1/img3.jpg" alt="food">
+                        <img src="./images/food/blog/news1/img3.jpg" alt="food" class="img3">
                     </div>
             
-                    <p>Четвертое — используйте посуду для еды меньшего размера. Да-да, придется отказаться от любимых блюдец на пол-стола, но оно того стоит. Также не берите добавки. Ведь многие исследования доказывают, что мы делаем выводы о своем насыщении, основываясь не на своих чувствах сытости, а видя, что тарелка уже пуста.
+                    <p class="block3">Четвертое — используйте посуду для еды меньшего размера. Да-да, придется отказаться от любимых блюдец на пол-стола, но оно того стоит. Также не берите добавки. Ведь многие исследования доказывают, что мы делаем выводы о своем насыщении, основываясь не на своих чувствах сытости, а видя, что тарелка уже пуста.
             
                     Пятое — всегда начинайте еду с овощей.
             
@@ -1381,6 +1381,22 @@
             </div>
         </div>
         </footer>
-    <script src="index.js"></script>
+<!--         <script src="jquery.min.js"></script>
+        <script src="owlcarousel/owl.carousel.min.js"></script>
+        <script>
+            $('.owl-carousel2').owlCarousel({
+                center: true,
+                items:1,
+                dots: true,
+                loop:true,
+                margin:10,
+                responsive:{
+                    600:{
+                        items:4
+                    }
+                }
+        });
+        </script> -->
+        <script src="index.js"></script>
     </body>
 </html>

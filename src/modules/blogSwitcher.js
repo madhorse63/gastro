@@ -10,6 +10,7 @@ const cardsSwitcher = () => {
                 elem.nextElementSibling.classList.add('currentPageMarker');
                 elem.classList.remove('currentPageMarker');
             });
+            renderCards();
         });
     });
     prevPage.forEach(item => {
@@ -19,6 +20,7 @@ const cardsSwitcher = () => {
                 elem.previousElementSibling.classList.add('currentPageMarker')
                 elem.classList.remove('currentPageMarker');
             });
+            renderCards();
         });
     });
 
@@ -39,8 +41,17 @@ const cardsSwitcher = () => {
                     }
                 })
             }
+            renderCards();
         })
-    })
+    });
+
+    const renderCards = () => {
+        let activePage = document.querySelectorAll('.currentPageMarker');
+        let cards = document.querySelectorAll('[data-id]');
+        cards.forEach(item => {
+            item.dataset.id = 'news3';
+        })
+    }
 }
 
 export {cardsSwitcher};
